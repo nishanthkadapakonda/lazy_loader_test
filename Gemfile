@@ -25,7 +25,7 @@ gem 'coffee-rails', '~> 4.2'
 gem 'turbolinks', '~> 5'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.5'
-gem 'lazy_loading', path: 'vendor/gems/lazy_loading'
+gem 'lazy_loader', path: 'vendor/gems/lazy_loader'
 gem 'faker', :git => 'https://github.com/stympy/faker.git', :branch => 'master'
 gem 'rb-readline'
 # Use Redis adapter to run Action Cable in production
