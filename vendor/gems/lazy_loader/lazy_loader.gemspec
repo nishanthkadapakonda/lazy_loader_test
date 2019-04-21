@@ -39,5 +39,8 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "bundler", "~> 2.0"
   spec.add_development_dependency "rake", "~> 10.0"
   spec.add_development_dependency "rspec", "~> 3.0"
-  spec.add_development_dependency "will_paginate", "~> 3.0.4"
+  spec.add_dependency "will_paginate", "~> 3.0.4"
+  spec.add_development_dependency "kaminari"
+  spec.add_dependency "jquery-rails", "~> 4.3"
+  spec.add_dependency "rails-ujs", "~> 0.1.0"
 end

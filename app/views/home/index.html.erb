@@ -1,6 +1,6 @@
-<div>Music Album </div>
-<div id= "lazy_loader_infinite">
+<div id="title1">Music Album </div>
+<div id= "lazy_loader_infinite" class="infinite-scroll-parent">
     <% @records.each do  |record|%>
-        <div><%= record.album %></div>
+        <div class="infinite-scroll"><%= record.album %></div>
     <% end %>
 </div>

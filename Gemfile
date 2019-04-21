@@ -28,6 +28,8 @@ gem 'jbuilder', '~> 2.5'
 gem 'lazy_loader', path: 'vendor/gems/lazy_loader'
 gem 'faker', :git => 'https://github.com/stympy/faker.git', :branch => 'master'
 gem 'rb-readline'
+# gem 'jquery-rails', '~> 4.3', '>= 4.3.3'
+# gem 'rails-ujs', '~> 0.1.0'
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 4.0'
 # Use ActiveModel has_secure_password
