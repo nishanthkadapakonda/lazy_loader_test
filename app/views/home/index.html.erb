@@ -1,6 +1,44 @@
-<div id="title1">Music Album </div>
-<div id= "lazy_loader_infinite" class="infinite-scroll-parent">
-    <% @records.each do  |record|%>
-        <div class="infinite-scroll"><%= record.album %></div>
-    <% end %>
+<div class="container-fluid">
+    <div class="title">Music Album </div>
+    <div class="container">
+        <div id= "lazy_loader_infinite" class="infinite-scroll-parent">
+            <% @records.each do  |record|%>
+                <div class ="infinite-scroll">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <span class="Dr_avatar Dr_initial"><%= record.key %></span>
+                            <span class="album-name"><%= record.album %></span>
+                        </div>
+                        <div class="col-md-4"></div>
+                        <div class="col-md-4 text-center">
+                            <span class="album-chord"><%= record.chord %></span>
+                        </div>
+                    </div>
+                    <br/>
+                    <div class= "row">
+                        <div class="col-md-4">
+                            <span class="album-band"><%= record.band %></span>
+                        </div>
+                    </div>
+                    <br/>
+                    <div class = "row">
+                        <div class="col-md-12">
+                            <span class="static-text">In music, a note is the pitch and duration of a sound, and also its representation in musical notation</span>
+                            <br/>
+                            <span class="static-text">The instrument used is : </span>
+                            <span class="album-instrument"><%= record.instrument %></span>
+                            <span class="static-text">The genre is : </span>
+                            <span class="album-instrument"><%= record.genre %></span>
+                        </div>
+                    </div>
+                </div>
+            <% end %>
+        </div>
+        <div class="row">
+            <div class="col-md-4"></div>
+            <div id="loader" class="col-md-4 text-center"></div>
+        </div>
+    </div>
+    <%= will_paginate @records %>
 </div>
+

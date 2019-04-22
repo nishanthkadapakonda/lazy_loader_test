@@ -43,4 +43,5 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "kaminari"
   spec.add_dependency "jquery-rails", "~> 4.3"
   spec.add_dependency "rails-ujs", "~> 0.1.0"
+  spec.add_dependency "gon"
 end
